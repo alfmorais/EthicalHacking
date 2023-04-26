@@ -1,0 +1,12 @@
+Perguntas dessa tarefa
+Qual o endereço IP do meu servidor de DNS?
+
+Qual o endereço IPv4 do Facebook que foi enviado em resposta a minha requisição DNS?
+
+Qual o endereço IPv6 do Facebook que foi enviado em resposta a minha requisição DNS?
+
+Qual o endereço MAC do meu Kali Linux?
+
+Qual o endereço IPv4 do site Globo.com que foi enviado em resposta a minha requisição DNS?
+
+Que protocolo foi utilizado para trocar informações do Kali linux com o Facebook na porta 443?
