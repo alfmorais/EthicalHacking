@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Wed Apr 26 22:15:31 2023 as: nmap -oN scan.txt 208.117.45.178
+Nmap scan report for 208.117.45.178
+Host is up (0.20s latency).
+Not shown: 980 closed ports
+PORT      STATE    SERVICE
+19/tcp    filtered chargen
+21/tcp    open     ftp
+22/tcp    open     ssh
+25/tcp    filtered smtp
+80/tcp    open     http
+110/tcp   open     pop3
+111/tcp   open     rpcbind
+143/tcp   open     imap
+443/tcp   open     https
+465/tcp   open     smtps
+993/tcp   open     imaps
+995/tcp   open     pop3s
+2121/tcp  filtered ccproxy-ftp
+2222/tcp  open     EtherNetIP-1
+2525/tcp  open     ms-v-worlds
+3306/tcp  open     mysql
+5555/tcp  filtered freeciv
+5666/tcp  open     nrpe
+12174/tcp filtered unknown
+32770/tcp filtered sometimes-rpc3
+
+# Nmap done at Wed Apr 26 22:16:00 2023 -- 1 IP address (1 host up) scanned in 28.95 seconds
