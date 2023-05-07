@@ -12,9 +12,15 @@ Qual a versão do Samba configurada no Metasploitable?
 Samba 3.0.20-Debian
 
 Quais pastas foram localizadas compartilhadas no Metasploitable?
+C:\tmp
+C:\var\lib\samba\printers
 
 Algum arquivo foi localizado compartilhado no Metaspoitable? Se sim, qual o nome?
+oh noes!
 
 Qual a versão do SMB utilizada para comunicação entre hosts?
+SMBv1
 
-FONTE: https://www.youtube.com/watch?v=4jYcLoqjZdE
+FONTE: 
+https://www.youtube.com/watch?v=4jYcLoqjZdE
+https://www.infosecademy.com/nmap-smb-scripts-enumeration/
