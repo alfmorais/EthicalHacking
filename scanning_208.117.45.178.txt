@@ -1,0 +1,33 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-04 20:11 EDT
+Nmap scan report for marxismo.org.br (208.117.45.178)
+Host is up (1.2s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 1.90 seconds
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-04 20:11 EDT
+Nmap scan report for marxismo.org.br (208.117.45.178)
+Host is up (0.16s latency).
+
+PORT   STATE         SERVICE
+80/udp open|filtered http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.96 seconds
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-04 20:11 EDT
+Nmap scan report for marxismo.org.br (208.117.45.178)
+Host is up (0.16s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.90 seconds
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-04 20:11 EDT
+Nmap scan report for marxismo.org.br (208.117.45.178)
+Host is up (0.18s latency).
+
+PROTOCOL STATE  SERVICE
+80       closed iso-ip
+
+Nmap done: 1 IP address (1 host up) scanned in 0.52 seconds

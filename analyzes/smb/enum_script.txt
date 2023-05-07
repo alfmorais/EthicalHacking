@@ -1,0 +1,227 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-06 15:49 EDT
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up (0.00018s latency).
+
+PORT    STATE  SERVICE
+137/tcp closed netbios-ns
+139/tcp open   netbios-ssn
+445/tcp open   microsoft-ds
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-061: false
+
+Nmap done: 1 IP address (1 host up) scanned in 5.59 seconds
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-06 15:50 EDT
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 1000, min 100, max 10000
+  max-scan-delay: TCP 1000, UDP 1000, SCTP 1000
+  parallelism: min 0, max 0
+  max-retries: 10, host-timeout: 0
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+NSE: Using Lua 5.3.
+NSE: Arguments from CLI: 
+NSE: Loaded 11 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 15:50
+Completed NSE at 15:50, 0.00s elapsed
+Initiating ARP Ping Scan at 15:50
+Scanning 192.168.15.38 [1 port]
+Packet capture filter (device eth0): arp and arp[18:4] = 0x080027C7 and arp[22:2] = 0xE136
+Completed ARP Ping Scan at 15:50, 0.04s elapsed (1 total hosts)
+Overall sending rates: 27.52 packets / s, 1155.69 bytes / s.
+mass_rdns: Using DNS server 192.168.15.1
+mass_rdns: Using DNS server fe80::c23d:d9ff:fe04:34af%eth0
+Initiating Parallel DNS resolution of 1 host. at 15:50
+mass_rdns: 0.01s 0/1 [#: 2, OK: 0, NX: 0, DR: 0, SF: 0, TR: 1]
+Completed Parallel DNS resolution of 1 host. at 15:50, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 2, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 15:50
+Scanning 192.168.15.38 (192.168.15.38) [3 ports]
+Packet capture filter (device eth0): dst host 192.168.15.37 and (icmp or icmp6 or ((tcp) and (src host 192.168.15.38)))
+Discovered open port 445/tcp on 192.168.15.38
+Discovered open port 139/tcp on 192.168.15.38
+Completed SYN Stealth Scan at 15:50, 0.03s elapsed (3 total ports)
+Overall sending rates: 95.04 packets / s, 4181.98 bytes / s.
+NSE: Script scanning 192.168.15.38.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 15:50
+NSE: Starting smb-vuln-ms06-025 against 192.168.15.38.
+NSE: Starting smb-vuln-ms10-061 against 192.168.15.38.
+NSE: Starting smb-vuln-ms10-054 against 192.168.15.38.
+NSE: [smb-vuln-ms10-054 192.168.15.38] You must specify unsafe script argument to run this script.
+NSE: Finished smb-vuln-ms10-054 against 192.168.15.38.
+NSE: Starting smb-vuln-ms08-067 against 192.168.15.38.
+NSE: Starting smb-vuln-ms17-010 against 192.168.15.38.
+NSE: Starting smb-vuln-webexec against 192.168.15.38:139.
+NSE: Starting smb-vuln-cve2009-3103 against 192.168.15.38.
+NSE: Starting smb-vuln-cve-2017-7494 against 192.168.15.38.
+NSE: Starting smb-vuln-regsvc-dos against 192.168.15.38.
+NSE: Starting smb-vuln-ms07-029 against 192.168.15.38.
+NSE: Starting smb-vuln-webexec against 192.168.15.38:445.
+NSE: Starting smb-vuln-conficker against 192.168.15.38.
+NSE: [smb-vuln-cve2009-3103 192.168.15.38] Waiting 5 seconds to see if Windows crashed
+NSE: [smb-vuln-ms06-025 192.168.15.38] SMB: Added account '' to account list
+NSE: [smb-vuln-ms06-025 192.168.15.38] SMB: Added account 'guest' to account list
+NSE: [smb-vuln-ms06-025 192.168.15.38] SMB: Extended login to 192.168.15.38 as METASPLOITABLE\guest failed (NT_STATUS_LOGON_FAILURE)
+NSE: [smb-vuln-ms06-025 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms10-061 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms10-061 192.168.15.38] SMB: Login as WORKGROUP\<blank> failed, but was given guest access (username may be wrong, or system may only allow guest)
+NSE: [smb-vuln-ms08-067 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms10-061 192.168.15.38] No printer specified, trying to find one...
+NSE: [smb-vuln-ms10-061 192.168.15.38] MSRPC: Sending Browser Service request
+NSE: [smb-vuln-ms10-061 192.168.15.38] No printer found, system may be unpatched but it needs at least one printer shared to be vulnerable.
+NSE: Finished smb-vuln-ms10-061 against 192.168.15.38.
+NSE: [smb-vuln-ms17-010 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms17-010 192.168.15.38] Connected to share 'IPC$'
+NSE: Finished smb-vuln-ms08-067 against 192.168.15.38.
+NSE: [smb-vuln-ms17-010 192.168.15.38] Valid SMB_COM_TRANSACTION response received
+NSE: [smb-vuln-ms17-010 192.168.15.38] STATUS_INVALID_HANDLE response received. This system is likely patched.
+NSE: Finished smb-vuln-ms17-010 against 192.168.15.38.
+NSE: [smb-vuln-webexec 192.168.15.38:139] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Login as WORKGROUP\<blank> failed, but was given guest access (username may be wrong, or system may only allow guest)
+NSE: [smb-vuln-webexec 192.168.15.38:139] Trying to open the remote service manager with minimal permissions
+NSE: [smb-vuln-regsvc-dos 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms07-029 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-webexec 192.168.15.38:445] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-ms07-029 192.168.15.38] check_ms07_029: Service is not active.
+NSE: Finished smb-vuln-ms07-029 against 192.168.15.38.
+NSE: [smb-vuln-conficker 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-conficker 192.168.15.38] SMB: Login as WORKGROUP\<blank> failed, but was given guest access (username may be wrong, or system may only allow guest)
+NSE: Finished smb-vuln-webexec against 192.168.15.38:139.
+NSE: smb-vuln-regsvc-dos against 192.168.15.38 threw an error!
+/usr/bin/../share/nmap/nselib/datetime.lua:137: attempt to perform arithmetic on a nil value (local 't')
+stack traceback:
+	/usr/bin/../share/nmap/nselib/datetime.lua:137: in function 'datetime.format_timestamp'
+	/usr/bin/../share/nmap/nselib/msrpc.lua:2631: in function 'msrpc.winreg_enumkey'
+	/usr/bin/../share/nmap/scripts/smb-vuln-regsvc-dos.nse:89: in global 'check_winreg_Enum_crash'
+	/usr/bin/../share/nmap/scripts/smb-vuln-regsvc-dos.nse:113: in function </usr/bin/../share/nmap/scripts/smb-vuln-regsvc-dos.nse:98>
+	(...tail calls...)
+
+NSE: [smb-vuln-ms06-025 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-webexec 192.168.15.38:445] Trying to open the remote service manager with minimal permissions
+NSE: Finished smb-vuln-conficker against 192.168.15.38.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Attempting to log into the system to enumerate shares
+NSE: Finished smb-vuln-ms06-025 against 192.168.15.38.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: Finished smb-vuln-webexec against 192.168.15.38:445.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Found 5 shares, will attempt to find more information
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Trying a random share to see if server responds properly: nmap-share-test
+NSE: [smb-vuln-cve2009-3103 192.168.15.38] Attempting to connect to the host
+NSE: [smb-vuln-cve2009-3103 192.168.15.38] Attempting to send data to the host
+NSE: [smb-vuln-cve2009-3103 192.168.15.38] Checks finished; host is likely not vulnerable.
+NSE: Finished smb-vuln-cve2009-3103 against 192.168.15.38.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Trying a random share to see if server responds properly: nmap-share-test
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Getting information for share: ADMIN$
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\ADMIN$ can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\ADMIN$ can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\ADMIN$ can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\ADMIN$ can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Getting information for share: IPC$
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Getting information for share: opt
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\opt can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\opt can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\opt can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\opt can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Getting information for share: print$
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\print$ can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\print$ can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\print$ can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\print$ can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Getting information for share: tmp
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\tmp can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\tmp can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\tmp can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\tmp can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Writable share name: \\192.168.15.38\tmp, Path returned: /tmp/
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be read by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be read by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be written by the current user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: Checking if share \\192.168.15.38\IPC$ can be written by the anonymous user
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Write file status true , err nil
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Write file status true , err nil
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Trying path : \\PIPE\/tmp/1test.so
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Status: false, Result: NT_STATUS_OBJECT_NAME_NOT_FOUND
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Trying path : /tmp/1test.so
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Status: false, Result: NT_STATUS_OBJECT_NAME_NOT_FOUND
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Trying path : \\PIPE\/tmp/2test.so
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Status: false, Result: NT_STATUS_OBJECT_NAME_NOT_FOUND
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Trying path : /tmp/2test.so
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] Status: false, Result: NT_STATUS_OBJECT_NAME_NOT_FOUND
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-vuln-cve-2017-7494 192.168.15.38] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: Finished smb-vuln-cve-2017-7494 against 192.168.15.38.
+Completed NSE at 15:50, 5.14s elapsed
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up, received arp-response (0.00022s latency).
+Scanned at 2023-05-06 15:50:48 EDT for 5s
+
+PORT    STATE  SERVICE      REASON
+137/tcp closed netbios-ns   reset ttl 64
+139/tcp open   netbios-ssn  syn-ack ttl 64
+445/tcp open   microsoft-ds syn-ack ttl 64
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+Final times for host: srtt: 225 rttvar: 2149  to: 100000
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 15:50
+Completed NSE at 15:50, 0.00s elapsed
+Read from /usr/bin/../share/nmap: nmap-mac-prefixes nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 5.41 seconds
+           Raw packets sent: 4 (160B) | Rcvd: 4 (156B)

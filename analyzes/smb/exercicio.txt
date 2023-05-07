@@ -1,0 +1,20 @@
+Passo 1: Efetuar um Scanning e Enumeração nas portas 445 e 139 (Protocolo SMB).
+
+Passo 2: Entender o protocolo SMB e utilizar os scripts do Nmap Script Engine para coletar o máximo de informações.
+
+Passo 3: Responder as questões com as informações coletadas.
+
+Perguntas dessa tarefa
+Qual o nome de domínio configurado no Metasploitable?
+localdomain
+
+Qual a versão do Samba configurada no Metasploitable?
+Samba 3.0.20-Debian
+
+Quais pastas foram localizadas compartilhadas no Metasploitable?
+
+Algum arquivo foi localizado compartilhado no Metaspoitable? Se sim, qual o nome?
+
+Qual a versão do SMB utilizada para comunicação entre hosts?
+
+FONTE: https://www.youtube.com/watch?v=4jYcLoqjZdE

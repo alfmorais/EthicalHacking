@@ -1,0 +1,14 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-05 17:02 EDT
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up (0.00018s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|_    NT LM 0.12 (SMBv1) [dangerous, but default]
+
+Nmap done: 1 IP address (1 host up) scanned in 0.29 seconds

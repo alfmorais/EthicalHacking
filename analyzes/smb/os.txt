@@ -1,0 +1,18 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-06 15:57 EDT
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up (0.00019s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   Computer name: metasploitable
+|   NetBIOS computer name: 
+|   Domain name: localdomain
+|   FQDN: metasploitable.localdomain
+|_  System time: 2023-05-06T15:57:30-04:00
+
+Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds

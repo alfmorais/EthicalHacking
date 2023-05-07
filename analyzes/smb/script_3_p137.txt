@@ -1,0 +1,20 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-06 15:48 EDT
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up (0.00020s latency).
+
+PORT    STATE SERVICE
+137/udp open  netbios-ns
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+| nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| Names:
+|   METASPLOITABLE<00>   Flags: <unique><active>
+|   METASPLOITABLE<03>   Flags: <unique><active>
+|   METASPLOITABLE<20>   Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
