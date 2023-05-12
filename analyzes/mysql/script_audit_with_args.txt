@@ -1,0 +1,66 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-09 22:02 EDT
+Nmap scan report for 192.168.15.38 (192.168.15.38)
+Host is up (0.00026s latency).
+
+PORT     STATE SERVICE
+3306/tcp open  mysql
+| mysql-audit: 
+|   CIS MySQL Benchmarks v1.0.2
+|       3.1: Skip symbolic links => FAIL
+|       3.2: Logs not on system partition => PASS
+|       3.2: Logs not on database partition => PASS
+|       4.1: Supported version of MySQL => REVIEW
+|         Version: 5.0.51a-3ubuntu5
+|       4.4: Remove test database => PASS
+|       4.5: Change admin account name => PASS
+|       4.7: Verify Secure Password Hashes => PASS
+|       4.9: Wildcards in user hostname => PASS
+|         The following users were found with wildcards in hostname
+|           guest
+|           root
+|       4.10: No blank passwords => PASS
+|         The following users were found having blank/empty passwords
+|           debian-sys-maint
+|           root
+|           guest
+|       4.11: Anonymous account => PASS
+|       5.1: Access to mysql database => REVIEW
+|         Verify the following users that have access to the MySQL database
+|           user  host
+|       5.2: Do not grant FILE privileges to non Admin users => PASS
+|         The following users were found having the FILE privilege
+|           guest
+|       5.3: Do not grant PROCESS privileges to non Admin users => PASS
+|         The following users were found having the PROCESS privilege
+|           guest
+|       5.4: Do not grant SUPER privileges to non Admin users => PASS
+|         The following users were found having the SUPER privilege
+|           guest
+|       5.5: Do not grant SHUTDOWN privileges to non Admin users => PASS
+|         The following users were found having the SHUTDOWN privilege
+|           guest
+|       5.6: Do not grant CREATE USER privileges to non Admin users => PASS
+|         The following users were found having the CREATE USER privilege
+|           guest
+|       5.7: Do not grant RELOAD privileges to non Admin users => PASS
+|         The following users were found having the RELOAD privilege
+|           guest
+|       5.8: Do not grant GRANT privileges to non Admin users => PASS
+|         The following users were found having the GRANT privilege
+|           guest
+|       6.2: Disable Load data local => FAIL
+|       6.3: Disable old password hashing => FAIL
+|       6.4: Safe show database => FAIL
+|       6.5: Secure auth => FAIL
+|       6.6: Grant tables => FAIL
+|       6.7: Skip merge => FAIL
+|       6.8: Skip networking => FAIL
+|       6.9: Safe user create => FAIL
+|       6.10: Skip symbolic links => FAIL
+|     
+|     Additional information
+|       The audit was performed using the db-account: root
+|_      The following admin accounts were excluded from the audit: root,debian-sys-maint
+MAC Address: 08:00:27:91:04:71 (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.55 seconds

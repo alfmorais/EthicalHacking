@@ -1,0 +1,14 @@
+COMANDO:
+ls -la /usr/share/nmap/scripts | grep "mysql"
+
+-rw-r--r-- 1 root root  6688 Mar 28 05:20 mysql-audit.nse
+-rw-r--r-- 1 root root  2977 Mar 28 05:20 mysql-brute.nse
+-rw-r--r-- 1 root root  2945 Mar 28 05:20 mysql-databases.nse
+-rw-r--r-- 1 root root  3263 Mar 28 05:20 mysql-dump-hashes.nse
+-rw-r--r-- 1 root root  2020 Mar 28 05:20 mysql-empty-password.nse
+-rw-r--r-- 1 root root  3413 Mar 28 05:20 mysql-enum.nse
+-rw-r--r-- 1 root root  3455 Mar 28 05:20 mysql-info.nse
+-rw-r--r-- 1 root root  3714 Mar 28 05:20 mysql-query.nse
+-rw-r--r-- 1 root root  2811 Mar 28 05:20 mysql-users.nse
+-rw-r--r-- 1 root root  3265 Mar 28 05:20 mysql-variables.nse
+-rw-r--r-- 1 root root  6977 Mar 28 05:20 mysql-vuln-cve2012-2122.nse
